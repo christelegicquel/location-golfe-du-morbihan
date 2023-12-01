@@ -42,6 +42,8 @@ img.info {
     overflow: auto;
     position:relative;
     height: auto;
+    width: 70%;
+
 
 }
 
@@ -99,4 +101,16 @@ div.separateur {
 
 * {
     overflow: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    img.photos {
+        width: 100%;
+        margin: 0;
+    }
+    div.photos img{
+        width: 100%;
+    }
+
 }
