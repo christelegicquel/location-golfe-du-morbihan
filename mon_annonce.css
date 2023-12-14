@@ -1,113 +1,124 @@
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --color1: #D89584;
-    --color2: #F4F4F4;
-    --color3: #34bcd4;
-}
-
-body {
-    background-color: white;
-    font-family: Arial;
-    margin-bottom: 0px;
-}
-
-iframe {
-    width: 100%;
-    border: none;
-    height: 350px;
-    background-color: grey;
-
-}
-div.frame {
-    margin: 30px 50px;
-    border: 2px solid var(--color3);
-    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px 30px;
-    background-color: white;
-}
-div.titre {
-    text-align: center;
-    color: aliceblue;
-    background-color: rgb(1, 10, 17);
-    padding: 30px 30px;
-}
-img.info {
-    display: block;
-    height: auto;
-    margin: auto;
-    width: 70%;
-}
-
-div.info {
-    text-align: center;
-    margin-block-end: 20px;
-}
-
-h2  {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-img.groupe {
-    display: block;
-    margin: auto;
-    width: 80%;
-    height: auto;
-    margin-left: -10px;
-}
-
-table.photos {
- 
-    width: 47%;
-}
-
-.float-right {
-    float: right;
-}
-
-p {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    background-color: lightgrey;
-    padding: 30px 30px 30px 30px;
-    text-overflow: clip;
-}
-
-div.separateur {
-    background-color: red ;
-    height: 3px;
-    width: 300px;
-    left: 50%;
-    position: relative;
-    margin-left: -150px;
-    margin-top: 50px;
-}
-
-.contact:hover{
-    color: white;
-}
-
-* {
-    overflow: auto;
-}
-
-@media only screen and (max-width: 768px) {
-    table.photos {
-        width: 100%;
-       
+    * {
+        box-sizing: border-box;
     }
 
-   
-    img.groupe {
+    :root {
+        --color1: #D89584;
+        --color2: #F4F4F4;
+        --color3: #34bcd4;
+    }
+
+    body {
+        background-color: white;
+        font-family: Arial;
+        margin-bottom: 0px;
+    }
+
+    iframe {
         width: 100%;
+        border: none;
+        height: 350px;
+        background-color: grey;
+    }
+    div.frame {
+        margin: 30px 50px;
+        border: 2px solid var(--color3);
+        box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px;
+        background-color: white;
+    }
+
+    div.titre {
+        text-align: center;
+        color: aliceblue;
+        background-color: rgb(1, 10, 17);
+        background-position: center;
+        padding: 30px 30px;
+    }
+
+    img.info {
+        display: block;
         height: auto;
-        margin-left: 20%;
- 
+        margin: auto;
+        margin-top: 30px;
+        width: 70%;
     }
-      
+
+    div.info {
+        text-align: center;
+        margin-block-end: 20px;
+    }
+
+    h2  {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .image-container {
+        width: 100%; /* Occupe 100% de la largeur disponible */
+        text-align: center; /* Centre les images à l'intérieur du conteneur */
+    }
+
+    .image-container img {
+        
+        height: auto; /* La hauteur s'ajuste automatiquement pour conserver les proportions originales de l'image */
+        margin: 10px; /* Marge entre les images */
+        box-sizing: border-box; /* Inclure les marges dans la largeur totale de l'image */
+      }
+
+    
+
+
+    p {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        background-color: lightgrey;
+        padding: 30px 30px 30px 30px;
+    }
+
+    div.separateur {
+        background-color: red ;
+        height: 3px;
+        width: 300px;
+        left: 50%;
+        position: relative;
+        margin-left: -150px;
+        margin-top: 50px;
+    }
+
+    .contact:hover{
+        color: white;
+    }
+
+    * {
+        overflow: auto;
+    }
+
+    
+
+@media only screen and (max-width: 767px) {
+    
+    .image-responsive {
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    iframe {
+        width: 100%;
+        border: none;
+        height: 350px;
+        background-color: grey;
+    }
+    div.frame {
+        margin: 20px 0px;
+        box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+   
+        background-color: white;
+    }
 }
